@@ -1,0 +1,199 @@
+:root {
+    --dark-blue: #021F3E;
+    --light-blue: #92ADBB;
+    --shade-blue: #47758C;
+    --content: #7A7A7A;
+    --orange: #C77935;
+}
+
+#order-container {
+    padding: 50px 0;
+}
+
+#order-container .head {
+    padding: 40px 0;
+}
+
+#order-container .order-content {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    padding: 50px 50px;
+    border-radius: 20px;
+}
+
+#order-container .order-content .order-card {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--orange);
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: .3s ease;
+}
+
+#order-container .order-content .order-card:hover {
+    background: #fff9f4;
+    transform: scale(1.01);
+}
+
+#order-container .order-content .order-card .img-box {
+    width: 160px;
+    height: 130px;
+    margin-right: 20px;
+}
+
+#order-container .order-content .order-card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+#order-container .order-content .order-card .left-content {
+    display: flex;
+    align-items: center;
+}
+
+#order-container .order-content .order-card .left-content h4 {
+    text-transform: capitalize;
+    color: var(--dark-blue);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#order-container .order-content .order-card .left-content span {
+    color: var(--content);
+    font-size: 16px;
+}
+
+#order-container .order-content .order-card .date-container {
+    display: flex;
+}
+
+#order-container .order-content .order-card .date-box {
+    margin-right: 20px;
+    text-align: center;
+}
+
+#order-container .order-content .order-card .date-box.order {
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+#order-container .order-content .order-card .date-box h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--dark-blue);
+    text-transform: capitalize;
+}
+
+#order-container .order-content .order-card .date-box small {
+    text-transform: capitalize;
+    color: var(--orange);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#order-container .order-content .order-card .date-box.order small,
+#order-container .order-content .order-card .date-box.order h5 {
+    color: var(--content);
+}
+
+#order-container .button {
+    text-align: center;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#order-container .button a {
+    padding: 14px 26px;
+    border-radius: 25px;
+    background-color: var(--orange);
+    color: #fff;
+    transition: .3s ease;
+}
+
+#order-container .button a:hover {
+    background-color: #603713;
+}
+
+@media all and (max-width: 980px) {
+    #order-container .order-content .order-card .img-box {
+        width: 120px;
+        height: 90px;
+    }
+
+    #order-container .order-content .order-card {
+        padding: 14px 16px;
+    }
+}
+
+@media all and (max-width: 640px) {
+
+    #order-container .order-content .order-card .left-content h4,
+    #order-container .order-content .order-card .date-box h5 {
+        font-size: 16px;
+    }
+
+    #order-container .order-content .order-card .left-content span {
+        font-size: 14px;
+    }
+
+    #order-container .order-content {
+        padding: 20px 16px;
+    }
+}
+
+@media all and (max-width: 560px) {
+    #order-container .order-content .order-card .left-content {
+        flex-direction: column;
+    }
+
+    #order-container .order-content .order-card .left-content h4 {
+        margin-bottom: 4px;
+    }
+
+    #order-container .order-content .order-card .left-content .text-box {
+        margin-top: 14px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #order-container .order-content .order-card .img-box {
+        margin: 0 auto;
+    }
+
+    #order-container .order-content .order-card .date-container {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    #order-container .order-content .order-card .date-container .date-box {
+        text-align: right;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    #order-container .order-content .order-card .date-container .date-box.order {
+        margin-left: 0;
+
+    }
+
+    .date-container {
+        padding: 20px 0;
+    }
+
+    #order-container .order-content .order-card .img-box {
+        width: 140px;
+        height: 110px;
+    }
+
+    #order-container .order-content .order-card .date-box h5 {
+        margin-bottom: 6px;
+    }
+}

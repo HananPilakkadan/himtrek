@@ -1,0 +1,15 @@
+#agreement-container h4 {
+    font-size: 24px;
+    margin: 24px 0px 32px;
+}
+
+#agreement-container p {
+    font-size: 14px;
+    line-height: 1.3em;
+    text-align: justify;
+}
+@media all and (max-width: 400px) {
+    #agreement-container h4{
+        font-size: 22px;
+    }
+}

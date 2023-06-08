@@ -1,0 +1,170 @@
+:root {
+    --dark-blue: #021F3E;
+    --light-blue: #92ADBB;
+    --headings: #47758C;
+    --content: #7A7A7A;
+    --orange: #C77935;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid var(--light-blue);
+}
+
+
+header .wrapper .logo {
+    width: 100px;
+}
+
+header .wrapper .logo img {
+    width: 100%;
+    display: block;
+}
+
+header .wrapper ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .wrapper ul a {
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-right: 24px;
+    color: var(--dark-blue);
+    font-weight: 600;
+    letter-spacing: .5px;
+    transition: .4s ease-in;
+}
+
+header .wrapper ul li a.active {
+    color: var(--orange);
+}
+
+header .wrapper ul a:hover {
+    opacity: .5;
+}
+
+header .wrapper ul a.register {
+    padding: 12px 20px;
+    background-color: var(--dark-blue);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    background-size: 300% 100%;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    margin-right: 0;
+}
+
+header .wrapper ul.auth select {
+    border: none;
+    padding: 12px;
+    margin-right: 24px;
+    background: none;
+    font-weight: bold;
+}
+
+header .wrapper ul.auth select option {
+    color: var(--dark-blue);
+    padding: 12px;
+}
+
+
+
+header .wrapper select:active {
+    border: none;
+}
+
+header .wrapper ul.auth {
+    align-items: center;
+}
+
+header .wrapper ul li.register:hover,
+header .wrapper ul li.register:focus {
+    opacity: 1;
+    background-color: #25466a;
+    box-shadow: 0 4px 15px 0 #021f3e96;
+
+
+}
+
+header .wrapper .logged-box {
+    display: flex;
+
+}
+
+header .wrapper .user-name span {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--dark-blue);
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+header .wrapper .user-name span img {
+    width: 20px;
+    transform: rotate(-180deg);
+    margin-left: 10px;
+}
+
+header .wrapper ul.auth small.register {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--orange);
+}
+
+header .wrapper .hamburger {
+    display: none;
+    width: 30px;
+}
+
+header .wrapper .hamburger span {
+    width: 100%;
+    display: block;
+    height: 3px;
+    background-color: #000;
+}
+
+header .wrapper .hamburger span:nth-child(2) {
+    margin: 6px 0;
+}
+
+
+
+
+/* responsive-screen */
+@media all and (max-width: 1280px) {
+    header .wrapper ul a {
+        margin-right: 20px;
+    }
+
+
+}
+
+@media all and (max-width: 980px) {
+    header .wrapper .hamburger {
+        display: block;
+    }
+
+    header .wrapper ul.nav,
+    header .wrapper ul.auth select,
+    header .wrapper ul.auth {
+        display: none;
+    }
+
+    header .wrapper .logo {
+        width: 80px;
+    }
+
+}
+
+@media all and (max-width: 640px) {}
